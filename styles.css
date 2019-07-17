@@ -1,5 +1,6 @@
 body{
   padding: 100px 0 0 0;
+  margin: 0;
 }
 
 .greeting{
@@ -41,6 +42,66 @@ nav ul li a{
   color: white;
   text-decoration: none;
 }
+
+
+nav ul li:first-child{
+  display: none;
+}
+
+@media (max-width:800px){
+
+  nav ul li{
+    height: 80px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    line-height: 5;
+  }
+
+  nav li:hover:not(:first-child){
+    background-color: grey;
+  }
+
+  nav li:hover a{
+    color: gold;
+  }
+
+  nav ul li:first-child{
+    display: block;
+    /* background-color: white; */
+    margin: 0px;
+    padding: 5px 0 0 0;
+    height: 80px;
+  }
+
+  .hamburger-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul{
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 0;
+    background-color: black;
+
+    height: 80px;
+    overflow: hidden;
+
+  }
+
+  nav ul:hover{
+    height: initial;
+  }
+
+  nav ul img{
+    height: 50px;
+  }
+
+}
+
 
 h3{
   font-size: 3rem;
@@ -91,11 +152,42 @@ h3{
 }
 
 
+.page{
+  display: flex;
+}
+
+
+.side-nav{
+  width: 150px;
+}
+
+h4{
+  padding-left: 6px;
+  margin-bottom: 0;
+}
+
+.side-nav ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.side-nav li:hover{
+  background-color: lightgray;
+}
+
+.side-nav li{
+  padding: 6px;
+  cursor: pointer;
+}
+
+
 
 .shop{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: calc(100vw - 150px);
 }
 
 
