@@ -1,0 +1,174 @@
+body{
+  padding: 100px 0 0 0;
+}
+
+.greeting{
+  color:red;
+  text-decoration: underline;
+}
+
+nav{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+
+  background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav ul{
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+nav h1{
+    margin-left: 50px;
+}
+
+nav ul li{
+  margin: 30px;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+h3{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.first-section {
+  text-align: center;
+  display: flex;
+}
+
+.first-section p{
+  margin-top: 50px;
+  font-size: 2rem;
+  padding: 20px 40px;
+}
+
+.first-section img{
+  max-height: 50vh;
+  width: 2100px;
+}
+
+.second-section img{
+  max-height: 50vh;
+}
+
+.second-section {
+  text-align: center;
+  display: flex;
+}
+
+.second-section p{
+  margin-top: 50px;
+  font-size: 2rem;
+  padding: 20px 40px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 60vh;
+}
+
+.form input[type=checkbox]{
+  transform: scale(2, 2);
+}
+
+
+
+.shop{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.shop-item{
+  height: 200px;
+  width: 200px;
+
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.shop-item img{
+  height: 60%;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+
+.shop-item span{
+  font-size: 24px;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.shop-item button{
+  background-color: gold;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.spinning{
+  animation: spin 2s forwards infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+
+  background-color: #730;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+footer h3{
+  margin: 0;
+  font-size: 20px;
+}
+
+footer img{
+  height: calc(50px - 10px);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
