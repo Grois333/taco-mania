@@ -45,6 +45,11 @@ nav ul li a{
   text-decoration: none;
 }
 
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
 
 nav ul li:first-child{
   display: none;
@@ -58,6 +63,7 @@ nav ul li:first-child{
     padding: 20px;
     text-align: center;
     line-height: 5;
+
   }
 
   nav li:hover:not(:first-child){
@@ -284,3 +290,11 @@ footer img{
   height: 80vh;
   overflow: hidden;
 }
+
+
+/* h1{
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+} */
